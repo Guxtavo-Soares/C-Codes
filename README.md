@@ -1,6 +1,6 @@
 # C-Codes
-Brazilian Portuguese
+Brazilian Portuguese --->
 Códigos em C que eu criei apenas para testar meu conhecimentos.
 
-English
+English --->
 C codes that I created just to test my knowledge.
