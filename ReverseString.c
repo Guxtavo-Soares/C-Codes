@@ -3,13 +3,13 @@
 #include <locale.h>
 
 
-int zera(char *str){
+int endString(char *str){
     str[strlen(str)-1] = '\0';
     return(0);
 
 }
 
-int strlenGusta(char *str){
+int strlenEspecial(char *str){
     int i = 0;
 
     while(*str!='\0'){
@@ -19,7 +19,7 @@ int strlenGusta(char *str){
     return(i);
 }
 
-int inverte(char *str, int result){
+int reverse(char *str, int result){
     int i = 0;
 
     for (i=result;i>=0;i--){
@@ -29,19 +29,19 @@ int inverte(char *str, int result){
 }
 
 int main(void){
-    char teste[200];
-    int resultado = 0;
+    char test[200];
+    int result = 0;
 
     setlocale(LC_ALL, "");
 
-    printf("Digite uma string: ");
+    printf("Type a string: ");
     fgets(teste, 200, stdin);
     zera(teste);
 
-    resultado = strlenGusta(teste);
-    printf("Essa string tem %i caracteres.\n", resultado);
-    printf("Essa string invertida é: ");
-    inverte(teste, resultado);
+    result = strlenEspecial(test);
+    printf("This string has %i characters.\n", resul);
+    printf("This inverted string is: ");
+    inverte(test, result);
     printf("\n");
 
     return(0);
